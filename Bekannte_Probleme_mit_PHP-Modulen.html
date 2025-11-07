@@ -114,7 +114,7 @@
 									
 								
 												
-				<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>Mit diesem Befehl prüfen Sie welche <span class="mw-lingo-tooltip "><span class="mw-lingo-tooltip-abbr">PHP</span><span class="mw-lingo-tooltip-tip "><span class="mw-lingo-tooltip-definition ">Der PHP Hypertext Preprocessor ist eine in HTML eingebettete Scriptsprache welche Serverseitig ausgef&#252;hrt wird. Mit Hilfe von PHP kann man dynamische und interaktive Websites programmieren.</span></span></span>-Module installiert sind:
+				<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>Mit diesem Befehl prüfen Sie welche <abbr title="Der PHP Hypertext Preprocessor ist eine in HTML eingebettete Scriptsprache welche Serverseitig ausgef&#252;hrt wird. Mit Hilfe von PHP kann man dynamische und interaktive Websites programmieren.">PHP</abbr>-Module installiert sind:
 </p>
 <pre>php -m
 </pre>
@@ -122,8 +122,8 @@
 <p>Mit dem SuEXEC-Modul kommt es zu zahlreichen Problemen, weswegen es generell ratsam ist, dieses Modul mit xmstore nicht zu verwenden. Sollte die Verwendung des Moduls aufgrund von anderweitigen Abhängigkeiten (z.B. Confixx) unumgänglich sein, so sind alle Verbote in der Datei <i>/etc/suphp/suphp.conf</i> (oder ähnlich, je nach Distribution) aufzuheben und die <i>umask</i> auf den Wert <i>0022</i> zu setzen.
 </p>
 <h1><span class="mw-headline" id="Suhosin">Suhosin</span></h1>
-<p>Die Verwendung von Suhosin ist generell zu empfehlen, allerdings kann es in einigen Situationen (z.B. viele Medien im <span class="mw-lingo-tooltip "><span class="mw-lingo-tooltip-abbr">Multieditor</span><span class="mw-lingo-tooltip-tip "><span class="mw-lingo-tooltip-definition ">Mit dem Multi-Editor verschlagworten Sie eine beliebige Anzahl von Medieninhalte in einem Schritt.</span></span></span>) zu Problemen kommen, da Suhosin zu große Datenmengen einfach nach dem Limit abschneidet. Um dieses Problem zu vermeiden, können die Werte im Knoten <i>suhosin.post.</i> mit 10, 100 oder gar 1000 multipliziert werden.
-</p><p>In diesem Zuge sollte auch die <span class="mw-lingo-tooltip "><span class="mw-lingo-tooltip-abbr">PHP</span><span class="mw-lingo-tooltip-tip "><span class="mw-lingo-tooltip-definition ">Der PHP Hypertext Preprocessor ist eine in HTML eingebettete Scriptsprache welche Serverseitig ausgef&#252;hrt wird. Mit Hilfe von PHP kann man dynamische und interaktive Websites programmieren.</span></span></span>-Ini-Variable <i>max_input_vars</i> überprüft und ggf. erhöht werden.
+<p>Die Verwendung von Suhosin ist generell zu empfehlen, allerdings kann es in einigen Situationen (z.B. viele Medien im <abbr title="Mit dem Multi-Editor verschlagworten Sie eine beliebige Anzahl von Medieninhalte in einem Schritt.">Multieditor</abbr>) zu Problemen kommen, da Suhosin zu große Datenmengen einfach nach dem Limit abschneidet. Um dieses Problem zu vermeiden, können die Werte im Knoten <i>suhosin.post.</i> mit 10, 100 oder gar 1000 multipliziert werden.
+</p><p>In diesem Zuge sollte auch die <abbr title="Der PHP Hypertext Preprocessor ist eine in HTML eingebettete Scriptsprache welche Serverseitig ausgef&#252;hrt wird. Mit Hilfe von PHP kann man dynamische und interaktive Websites programmieren.">PHP</abbr>-Ini-Variable <i>max_input_vars</i> überprüft und ggf. erhöht werden.
 </p>
 <h1><span class="mw-headline" id="Readline">Readline</span></h1>
 <p>Das Readline-Modul kann die Ausführung von Hintergrund-Tasks (wie z.B. der Uploadverarbeitung) verhindern.
