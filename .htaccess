@@ -1,5 +1,14 @@
 RewriteEngine On
 
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Force main domain (redirect www to non-www)
+RewriteCond %{HTTP_HOST} !^de\.wiki\.xmstore\.de$ [NC]
+RewriteRule ^(.*)$ https://de.wiki.xmstore.de/$1 [R=301,L]
+
+# Clean URLs - add .html extension
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
